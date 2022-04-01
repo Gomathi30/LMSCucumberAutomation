@@ -1,0 +1,552 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title></title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary"></span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Mar 31, 2022 06:23:29 PM</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="fail" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">As a tester, I want to test User API so that I can validate GET method</p>
+            <p class="text-sm">
+              <span>6:23:30 PM</span> / <span>00:00:04:129</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">As a tester, I want to test User API so that I can validate GET method</h5>
+<span class='badge badge-success'>03.31.2022 6:23:30 PM</span>
+<span class='badge badge-danger'>03.31.2022 6:23:34 PM</span>
+<span class='badge badge-default'>00:00:04:129</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>Test the Get request for all users of User API</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.UsersGet.user_is_on_the_get_method()">
+                <span>Given user is on the Get method</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.UsersGet.user_sends_get_request_with_valid_authorization_for_all_users()">
+                <span>When user sends get request with valid authorization for all users</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="stepDefinitions.UsersGet.user_details_are_displayed_with_ok_message(java.lang.Integer)">
+                <span>Then user details are displayed with 200 OK message</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError: 1 expectation failed.
+Response body doesn't match expectation.
+Expected: The content to match the given JSON schema.
+error: object has missing required properties (["linkedin_url","location","name","phone_number","time_zone","user_id"])
+    level: "error"
+    schema: {"loadingURI":"file:/Users/suresh/eclipse-workspace/LMSCucumberAutomation/target/test-classes/schemas/usersSchema.json#","pointer":"/items/0"}
+    instance: {"pointer":"/0"}
+    domain: "validation"
+    keyword: "required"
+    required: ["linkedin_url","location","name","phone_number","time_zone","user_id"]
+    missing: ["linkedin_url","location","name","phone_number","time_zone","user_id"]
+
+  Actual: [{"skill_id":2,"skill_name":"Spring Boot"},{"skill_id":4,"skill_name":"Postman"},{"skill_id":143,"skill_name":"Mongo DB"},{"skill_id":7,"skill_name":"C"},{"skill_id":145,"skill_name":"GUIDevlpt"},{"skill_id":218,"skill_name":"TeraDataaa"},{"skill_id":303,"skill_name":"AWS30"},{"skill_id":206,"skill_name":"trainingsele"},{"skill_id":77,"skill_name":"api"},{"skill_id":78,"skill_name":"apitest"},{"skill_id":21,"skill_name":"Tempo"},{"skill_id":80,"skill_name":"Securityesting"},{"skill_id":23,"skill_name":"phython"},{"skill_id":9,"skill_name":"RestAssured"},{"skill_id":288,"skill_name":"Javaascriptt"},{"skill_id":204,"skill_name":"trainingseleniume"},{"skill_id":320,"skill_name":"Javvasscriiptt"},{"skill_id":293,"skill_name":"AWS3"},{"skill_id":207,"skill_name":"theiaptst"},{"skill_id":185,"skill_name":"Sprinng"},{"skill_id":298,"skill_name":"J5EE"},{"skill_id":35,"skill_name":"MsPowerPoint"},{"skill_id":187,"skill_name":"Spprinng"},{"skill_id":188,"skill_name":"Golaang"},{"skill_id":39,"skill_name":"PowerPoint"},{"skill_id":40,"skill_name":"Excel"},{"skill_id":311,"skill_name":"AWS79"},{"skill_id":42,"skill_name":"MsExcel"},{"skill_id":83,"skill_name":"FAILED"},{"skill_id":235,"skill_name":"java742"},{"skill_id":189,"skill_name":"like"},{"skill_id":304,"skill_name":"AWS35"},{"skill_id":190,"skill_name":"Teradata"},{"skill_id":305,"skill_name":"AWS31"},{"skill_id":307,"skill_name":"AWS50"},{"skill_id":191,"skill_name":"SOADeveloper"},{"skill_id":192,"skill_name":"SOADevelper"},{"skill_id":156,"skill_name":"CC"},{"skill_id":146,"skill_name":"GUIDevvlptess"},{"skill_id":91,"skill_name":"RestAssured645"},{"skill_id":208,"skill_name":"trainingselenime"},{"skill_id":315,"skill_name":"Cdevelopers"},{"skill_id":316,"skill_name":"Javaasscriptt"},{"skill_id":317,"skill_name":"Gollanngg"},{"skill_id":93,"skill_name":"CSharpp"},{"skill_id":149,"skill_name":"CCSharp"},{"skill_id":150,"skill_name":"Maven"},{"skill_id":95,"skill_name":"Wescpingte"},{"skill_id":321,"skill_name":"Ggolang"},{"skill_id":184,"skill_name":"Sprinng Boot"},{"skill_id":152,"skill_name":"GUIDevelopers"},{"skill_id":132,"skill_name":"Pythonn"},{"skill_id":153,"skill_name":"SOA"},{"skill_id":161,"skill_name":"Maveen"},{"skill_id":69,"skill_name":"RabbitMQ"},{"skill_id":104,"skill_name":"Webscrapngt"},{"skill_id":105,"skill_name":"Websighners"},{"skill_id":106,"skill_name":"testplan"},{"skill_id":107,"skill_name":"Websighnering"},{"skill_id":108,"skill_name":"Websighering"},{"skill_id":245,"skill_name":"Networking"},{"skill_id":110,"skill_name":"testplaining"},{"skill_id":111,"skill_name":"testingtesting"},{"skill_id":209,"skill_name":"rubydevelopere"},{"skill_id":114,"skill_name":"UIDesigner"},{"skill_id":155,"skill_name":"guidevelopment"},{"skill_id":3,"skill_name":"Spring"},{"skill_id":163,"skill_name":"CCShaarp"},{"skill_id":119,"skill_name":"iapitst"},{"skill_id":197,"skill_name":"guidevelop"},{"skill_id":122,"skill_name":"theiapitst"},{"skill_id":123,"skill_name":"UIDevlop"},{"skill_id":167,"skill_name":"Selenium"},{"skill_id":210,"skill_name":"rubydeveloperers"},{"skill_id":172,"skill_name":"Ruby"},{"skill_id":171,"skill_name":"training java"},{"skill_id":173,"skill_name":"SQL"},{"skill_id":174,"skill_name":"Aws"},{"skill_id":175,"skill_name":"DatabaseTesting"},{"skill_id":177,"skill_name":"core java"},{"skill_id":178,"skill_name":"corejava"},{"skill_id":179,"skill_name":"word"},{"skill_id":211,"skill_name":"rubydeviloper"},{"skill_id":202,"skill_name":"devsecurity"},{"skill_id":251,"skill_name":"Java274"},{"skill_id":205,"skill_name":"trainingsel"},{"skill_id":212,"skill_name":"rubydevilop"},{"skill_id":213,"skill_name":"csharpdevilope"},{"skill_id":214,"skill_name":"manualtetg"},{"skill_id":215,"skill_name":"uiTesing"},{"skill_id":216,"skill_name":"Informatica"},{"skill_id":217,"skill_name":"Infomatica"},{"skill_id":220,"skill_name":"TeraDataa"},{"skill_id":221,"skill_name":"Core Javaa"},{"skill_id":222,"skill_name":"java74"},{"skill_id":223,"skill_name":"7421"},{"skill_id":224,"skill_name":"java7421"},{"skill_id":225,"skill_name":"Java77"},{"skill_id":226,"skill_name":"Java4721"},{"skill_id":227,"skill_name":"Amazonwebservices"},{"skill_id":229,"skill_name":"Python11"},{"skill_id":230,"skill_name":"Java2741"},{"skill_id":231,"skill_name":"Javaaaaaaaaa"},{"skill_id":89,"skill_name":"POI"},{"skill_id":234,"skill_name":"Tester"},{"skill_id":236,"skill_name":"Springman9"},{"skill_id":237,"skill_name":"IOT"},{"skill_id":238,"skill_name":"JEA"},{"skill_id":79,"skill_name":"networksecurity"},{"skill_id":241,"skill_name":"Communica"},{"skill_id":1,"skill_name":"J4EA"},{"skill_id":247,"skill_name":"GamingDeveloper"},{"skill_id":109,"skill_name":"AspdotnetMVC"},{"skill_id":248,"skill_name":"Appium"},{"skill_id":260,"skill_name":"Jaavaascriptt"},{"skill_id":254,"skill_name":"Java"},{"skill_id":262,"skill_name":"Cucumber"},{"skill_id":263,"skill_name":"Jaavaascript"},{"skill_id":264,"skill_name":"Goolangg"},{"skill_id":265,"skill_name":"Jaavascript"},{"skill_id":266,"skill_name":"Goolang"},{"skill_id":268,"skill_name":"laxmi"},{"skill_id":270,"skill_name":"pavithea"},{"skill_id":271,"skill_name":"diana"},{"skill_id":286,"skill_name":"AWS2"},{"skill_id":287,"skill_name":"BigDataHadoop"},{"skill_id":290,"skill_name":"AWS7"},{"skill_id":295,"skill_name":"AWS15"},{"skill_id":297,"skill_name":"AWS25"},{"skill_id":299,"skill_name":"AWS21"},{"skill_id":279,"skill_name":"Notepad"},{"skill_id":280,"skill_name":"Python1"},{"skill_id":281,"skill_name":"Aws1"},{"skill_id":282,"skill_name":"Jaavascriptt"},{"skill_id":283,"skill_name":"Goolanng"},{"skill_id":306,"skill_name":"AWS37"},{"skill_id":308,"skill_name":"AWS51"},{"skill_id":309,"skill_name":"AWS74"},{"skill_id":310,"skill_name":"AWS73"},{"skill_id":313,"skill_name":"Javvaascriptt"},{"skill_id":314,"skill_name":"Golannngg"},{"skill_id":318,"skill_name":"Javaasscriiptt"},{"skill_id":319,"skill_name":"Gollannggg"},{"skill_id":322,"skill_name":"DynamoDB"},{"skill_id":323,"skill_name":"Mainframe"}]
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:499)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:684)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:99)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:238)
+	at io.restassured.internal.ValidatableResponseImpl.super$2$body(ValidatableResponseImpl.groovy)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
+	at io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy:293)
+	at io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy)
+	at stepDefinitions.UsersGet.user_details_are_displayed_with_ok_message(UsersGet.java:60)
+	at ✽.user details are displayed with 200 OK message(file:///Users/suresh/eclipse-workspace/LMSCucumberAutomation/src/test/resources/features/02userGet.feature:8)
+</textarea>
+      
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="6"><span class="badge log fail-bg mr-2">Fail</span>Test the Api for get request for single user with valid id</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.UsersGet.user_is_on_the_get_method()">
+                <span>Given user is on the Get method</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.UsersGet.user_sends_get_request_for_valid_id_with_valid_authorization()">
+                <span>When user sends get request for valid id with valid authorization</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="stepDefinitions.UsersGet.single_user_details_are_displayed_with_ok_message(java.lang.Integer)">
+                <span>Then single user details are displayed with 200 OK message</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError: 1 expectation failed.
+Response body doesn't match expectation.
+Expected: The content to match the given JSON schema.
+error: object has missing required properties (["linkedin_url","location","name","phone_number","time_zone","user_id"])
+    level: "error"
+    schema: {"loadingURI":"file:/Users/suresh/eclipse-workspace/LMSCucumberAutomation/target/test-classes/schemas/userSchemaSingleUser.json#","pointer":""}
+    instance: {"pointer":""}
+    domain: "validation"
+    keyword: "required"
+    required: ["linkedin_url","location","name","phone_number","time_zone","user_id"]
+    missing: ["linkedin_url","location","name","phone_number","time_zone","user_id"]
+
+  Actual: {
+    "timestamp": "2022-03-31T22:23:37.095+00:00",
+    "message": "Skill ID - U951 is invalid !!",
+    "details": "uri=/Skills/U951"
+}
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:499)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:684)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:99)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:238)
+	at io.restassured.internal.ValidatableResponseImpl.super$2$body(ValidatableResponseImpl.groovy)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
+	at io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy:293)
+	at io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy)
+	at stepDefinitions.UsersGet.single_user_details_are_displayed_with_ok_message(UsersGet.java:90)
+	at ✽.single user details are displayed with 200 OK message(file:///Users/suresh/eclipse-workspace/LMSCucumberAutomation/src/test/resources/features/02userGet.feature:13)
+</textarea>
+      
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="10"><span class="badge log pass-bg mr-2">Pass</span>Test the Get request for User API without authorization</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.UsersGet.user_is_on_the_get_method()">
+                <span>Given user is on the Get method</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.UsersGet.user_sends_get_request_with_no_authorization()">
+                <span>When user sends get request with no authorization</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.UsersGet.unathorized_status_code_should_be_returned(java.lang.Integer)">
+                <span>Then 401 unathorized status code should be returned</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="14"><span class="badge log fail-bg mr-2">Fail</span>Test the Api for get request with invalid id</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.UsersGet.user_is_on_the_get_method()">
+                <span>Given user is on the Get method</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.UsersGet.user_sends_get_request_for_invalid_id()">
+                <span>When user sends get request for invalid id</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="stepDefinitions.UsersGet.single_user_details_are_displayed_with_not_found_message(java.lang.Integer)">
+                <span>Then single user details are displayed with 404 Not found message</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError: expected [404] but found [400]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:1294)
+	at stepDefinitions.UsersGet.single_user_details_are_displayed_with_not_found_message(UsersGet.java:131)
+	at ✽.single user details are displayed with 404 Not found message(file:///Users/suresh/eclipse-workspace/LMSCucumberAutomation/src/test/resources/features/02userGet.feature:23)
+</textarea>
+      
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>3</span>
+</span>
+<p class="name">java.lang.AssertionError</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.AssertionError</h4>
+<span status="fail" class='badge log badge-danger'>3 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:23:33 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='5'>Then user details are displayed with 200 OK message</a>
+<div class="">
+<span class="badge badge-default">As a tester, I want to test User API so that I can validate GET method.Test the Get request for all users of User API.Then user details are displayed with 200 OK message</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:23:34 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='9'>Then single user details are displayed with 200 OK message</a>
+<div class="">
+<span class="badge badge-default">As a tester, I want to test User API so that I can validate GET method.Test the Api for get request for single user with valid id.Then single user details are displayed with 200 OK message</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:23:34 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='17'>Then single user details are displayed with 404 Not found message</a>
+<div class="">
+<span class="badge badge-default">As a tester, I want to test User API so that I can validate GET method.Test the Api for get request with invalid id.Then single user details are displayed with 404 Not found message</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Mar 31, 2022 06:23:29 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Mar 31, 2022 06:23:35 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>0</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>1</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'>
+<b>0</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='100%'><b>1</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='25%'><b>1</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='75%'><b>3</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='75%'><b>9</b> steps passed</small></div>
+<div>
+<small data-tooltip='25%'><b>3</b> steps failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"As a tester, I want to test User API so that I can validate GET method":4.129
+};
+</script>
+<div class="row">
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 0,
+failParent: 1,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 1,
+failChild: 3,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 9,
+failGrandChild: 3,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

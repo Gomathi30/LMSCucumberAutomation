@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="34" time="32.742">
+<testcase classname="As a tester,I want to test and validate Post request in Users API" name="Test the users Api for post request with valid authorization and valid details" time="6.337">
+<system-out><![CDATA[Given User is on post method of users API...................................passed
+When User sends post request with valid values with endpoint URL............passed
+Then The status code is 201 with success message............................passed
+]]></system-out>
+</testcase>
+<testcase classname="As a tester, I want to test User API so that I can validate GET method" name="Test the Get request for all users of User API" time="1.175">
+<system-out><![CDATA[Given user is on the Get method.............................................passed
+When user sends get request with valid authorization for all users..........passed
+Then user details are displayed with 200 OK message.........................passed
+]]></system-out>
+</testcase>
+<testcase classname="As a tester, I want to test User API so that I can validate GET method" name="Test the Api for get request for single user with valid id" time="1.981">
+<system-out><![CDATA[Given user is on the Get method.............................................passed
+When user sends get request for valid id with valid authorization...........passed
+Then single user details are displayed with 200 OK message..................passed
+]]></system-out>
+</testcase>
+<testcase classname="As a tester, I want to test User API so that I can validate GET method" name="Test the Get request for User API without authorization" time="0.788">
+<system-out><![CDATA[Given user is on the Get method.............................................passed
+When user sends get request with no authorization...........................passed
+Then 401 unathorized status code should be returned.........................passed
+]]></system-out>
+</testcase>
+<testcase classname="As a tester, I want to test User API so that I can validate GET method" name="Test the Api for get request with invalid id" time="0.742">
+<system-out><![CDATA[Given user is on the Get method.............................................passed
+When user sends get request for invalid id..................................passed
+Then single user details are displayed with 404 Not found message...........passed
+]]></system-out>
+</testcase>
+<testcase classname="As a tester I want to test User API so that I can validate PUT method" name="Test the Users API for put request with valid id" time="1.101">
+<system-out><![CDATA[Given User is in the endpoint url with valid id.............................passed
+When User sends PUT request with endpoint url/users/id with updated fields and values.passed
+Then The response should show status code 201 Created.......................passed
+]]></system-out>
+</testcase>
+<testcase classname="As a tester I want to test User API so that I can validate PUT method" name="Test the Users API for put request with invalid id" time="0.81">
+<system-out><![CDATA[Given User is in the endpoint url with invalid id...........................passed
+When User sends PUT request with endpoint url/users/id with updated fields and values.passed
+Then The response should show status code 404 Not Found.....................passed
+]]></system-out>
+</testcase>
+<testcase classname="As a user, I want to test the delete request of Users API" name="Test the delete method for valid user id" time="0.655">
+<system-out><![CDATA[Given user is on delete method..............................................passed
+When user sends delete request with valid user id...........................passed
+Then the user id is deleted with response code 200..........................passed
+]]></system-out>
+</testcase>
+<testcase classname="As a user, I want to test the delete request of Users API" name="Test the delete method for nonexistant user id" time="0.46">
+<system-out><![CDATA[Given user is on delete method..............................................passed
+When user sends delete request with non existing user id....................passed
+Then 404 not found response code is displayed...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="As a user, I want to test the delete request of Users API" name="Test the delete method by not giving userid in the endpoint" time="0.52">
+<system-out><![CDATA[Given user is on delete method..............................................passed
+When user sends delete request without userid...............................passed
+Then 405 method not found error is displayed................................passed
+]]></system-out>
+</testcase>
+<testcase classname="As a tester I want to test and validate Skills API POST method" name="To test the post method in Skills API with valid skill name" time="2.923">
+<system-out><![CDATA[Given User is in POST method................................................passed
+When User sends POST request with Input Skill_name..........................passed
+Then The response status 201 with the message successfully created..........passed
+]]></system-out>
+</testcase>
+<testcase classname="As a tester I want to test and validate Skills API POST method" name="To test the post method in skills api without authorization" time="0.344">
+<system-out><![CDATA[Given User is in POST method................................................passed
+When User sends POST request without authorization..........................passed
+Then The response status 401 unauthorized is returned.......................passed
+]]></system-out>
+</testcase>
+<testcase classname="As a tester I want to test and validate Skills API POST method" name="To test the post method in skills api with same skill name" time="0.439">
+<system-out><![CDATA[Given User is in POST method................................................passed
+When User sends POST request with existing skill name.......................passed
+Then The response status 400 Bad request is returned........................passed
+]]></system-out>
+</testcase>
+<testcase classname="As a tester , I want to validate and test the Get request of Skills API" name="Test the Get request for all Skills of Skills API with valid auth" time="0.405">
+<system-out><![CDATA[Given user is on the Get method of SkillsApi................................passed
+When user sends get request for all skills with end.........................passed
+Then Skills details are displayed with 200 OK message.......................passed
+]]></system-out>
+</testcase>
+<testcase classname="As a tester , I want to validate and test the Get request of Skills API" name="Test the Api for get request for single skill with valid id and valid auth" time="0.398">
+<system-out><![CDATA[Given user is on the Get method of SkillsApi................................passed
+When user sends get skills request for valid id.............................passed
+Then particular skill details are displayed with 200 OK message.............passed
+]]></system-out>
+</testcase>
+<testcase classname="As a tester , I want to validate and test the Get request of Skills API" name="Test the Api for get request with invalid skill id" time="0.419">
+<system-out><![CDATA[Given user is on the Get method of SkillsApi................................passed
+When user sends get request for invalid skill id............................passed
+Then single skill details are displayed with 404 Not found message..........passed
+]]></system-out>
+</testcase>
+<testcase classname="As a tester , I want to validate and test the Get request of Skills API" name="Test the Get request for Skills API without authorization" time="0.377">
+<system-out><![CDATA[Given user is on the Get method of SkillsApi................................passed
+When user sends get request with no authorization for skills................passed
+Then 401 unathorized status error code should be returned...................passed
+]]></system-out>
+</testcase>
+<testcase classname="As a tester I want to test and validate Skills API PUT method" name="Test the Skills API for put request with valid id" time="1.13">
+<system-out><![CDATA[Given User is in put method of skills api...................................passed
+When User sends PUT request with with skill id and name.....................passed
+Then The response should return status code 201 Created.....................passed
+]]></system-out>
+</testcase>
+<testcase classname="As a tester I want to test and validate Skills API PUT method" name="Test the Skills API for put request with invalid id" time="0.546">
+<system-out><![CDATA[Given User is in put method of skills api...................................passed
+When User sends PUT request with invalid id.................................passed
+Then The response should return status code 404 Not Found...................passed
+]]></system-out>
+</testcase>
+<testcase classname="As a user, I want to test and validate the delete request of Skills API" name="Test the delete method for valid skill id" time="0.507">
+<system-out><![CDATA[Given user is on delete method in skills Api................................passed
+When user sends delete request with valid skill id..........................passed
+Then the skill id is deleted with response code 200.........................passed
+]]></system-out>
+</testcase>
+<testcase classname="As a user, I want to test and validate the delete request of Skills API" name="Test the delete method for nonexistant skill id" time="0.464">
+<system-out><![CDATA[Given user is on delete method in skills Api................................passed
+When user sends delete request with non existing skill id...................passed
+Then 404 not found error response code is displayed.........................passed
+]]></system-out>
+</testcase>
+<testcase classname="As a user, I want to test and validate the delete request of Skills API" name="Test the delete method by not giving skill id in the endpoint" time="0.442">
+<system-out><![CDATA[Given user is on delete method in skills Api................................passed
+When user sends delete request without skill id.............................passed
+Then 405 method not found error is displayed in skills......................passed
+]]></system-out>
+</testcase>
+<testcase classname="As a tester I want to test and validate the GET method in UserSkillsMap API" name="To get all the Users and their associated Skills  from UserSkillsMap API" time="0.99">
+<system-out><![CDATA[Given User selects GET method in UserSkillsMap api..........................passed
+When User sends GET request with endpoint UserSkillsMap.....................passed
+Then The response should be in JSON format with the status code 200.........passed
+]]></system-out>
+</testcase>
+<testcase classname="As a tester I want to test and validate the GET method in UserSkillsMap API" name="To get a particular  User and their associated Skills  from UserSkillsMap API" time="0.305">
+<system-out><![CDATA[Given User selects GET method and enter the endpoint........................passed
+When User sends GET request with userid endpoint............................passed
+Then user id details wil be returned with the status code 200...............passed
+]]></system-out>
+</testcase>
+<testcase classname="As a tester I want to test and validate the GET method in UserSkillsMap API" name="To get all users of a  particular  Skill in UserSkillsMap API" time="0.519">
+<system-out><![CDATA[Given User selects GET method and enter the endpoint skills.................passed
+When User sends GET request with skillid endpoint...........................passed
+Then skill id details will be displayed with the status code 200............passed
+]]></system-out>
+</testcase>
+<testcase classname="As a tester,I want to test and validate Post request in UserSkills API" name="Test the userSkills Api for post request with valid authorization and valid details" time="2.61">
+<system-out><![CDATA[Given User is on post method of userskills API..............................passed
+When User sends post request with valid values with endpoint URL in userskills.passed
+Then The status code is 201 with success message OK.........................passed
+]]></system-out>
+</testcase>
+<testcase classname="As a tester I want to test UserSkills API so that I can validate GET method" name="Test the Get request for all users of UserSkills API" time="0.616">
+<system-out><![CDATA[Given user is on the Get method in UserSkills Api...........................passed
+When user sends get request with valid auth for all users in UserSkill Api..passed
+Then userskill details are displayed with 200 OK message....................passed
+]]></system-out>
+</testcase>
+<testcase classname="As a tester I want to test UserSkills API so that I can validate GET method" name="Test the Api for get request for single user in UserSkills API" time="0.47">
+<system-out><![CDATA[Given user is on the Get method in UserSkills Api...........................passed
+When user sends get request with valid user skill id........................passed
+Then single user skill details are displayed with 200 OK message............passed
+]]></system-out>
+</testcase>
+<testcase classname="As a tester I want to test UserSkills API so that I can validate GET method" name="Test the Get request for User API without authorization in UserSkills API" time="0.381">
+<system-out><![CDATA[Given user is on the Get method in UserSkills Api...........................passed
+When user sends get request with no authorization in UserSkills Api.........passed
+Then 401 unathorized status code should be returned in userskills...........passed
+]]></system-out>
+</testcase>
+<testcase classname="As a tester I want to test UserSkills API so that I can validate GET method" name="Test the Api for get request with invalid id for userskills" time="0.415">
+<system-out><![CDATA[Given user is on the Get method in UserSkills Api...........................passed
+When user sends get request for invalid id in userskills....................passed
+Then 404 Not found message is returned......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="As a tester I want to test UserSkills API so that I can validate Put method" name="To test the put method of Userskills API" time="1.17">
+<system-out><![CDATA[Given User selects put method in UserSkills api.............................passed
+When User sends put request with valid user skill id........................passed
+Then The 201 status code is returned in UserSkills api......................passed
+]]></system-out>
+</testcase>
+<testcase classname="As a tester I want to test UserSkills API so that I can validate Put method" name="To test the put method of Userskills API  for invalid id" time="0.473">
+<system-out><![CDATA[Given User selects put method in UserSkills api.............................passed
+When User sends put request with invalid user skill id......................passed
+Then The response should show status code 404 Not Found in UserSkills api...passed
+]]></system-out>
+</testcase>
+<testcase classname="As a tester I want to test UserSkills API so that I can validate DELETE method" name="Test the deletion of the Existing User_Skill_Id" time="0.769">
+<system-out><![CDATA[Given User selects DELETE method in UserSkills api..........................passed
+When User sends delete request with valid user skill id.....................passed
+Then The response with the status code 200 is returned......................passed
+]]></system-out>
+</testcase>
+<testcase classname="As a tester I want to test UserSkills API so that I can validate DELETE method" name="Test the deletion of the Non-Existing User_Skill_Id" time="0.417">
+<system-out><![CDATA[Given User selects DELETE method in UserSkills api..........................passed
+When User sends delete request with in valid user skill id..................passed
+Then 404 not found error will be returned in userskills api.................passed
+]]></system-out>
+</testcase>
+</testsuite>
