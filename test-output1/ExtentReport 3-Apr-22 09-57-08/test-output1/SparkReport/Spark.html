@@ -1,0 +1,1494 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title></title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary"></span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Apr 3, 2022 09:57:08 AM</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">As a tester,I want to test and validate Post request in Users API</p>
+            <p class="text-sm">
+              <span>9:57:09 AM</span> / <span>00:00:07:271</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">As a tester,I want to test and validate Post request in Users API</h5>
+<span class='badge badge-success'>04.03.2022 9:57:09 AM</span>
+<span class='badge badge-danger'>04.03.2022 9:57:16 AM</span>
+<span class='badge badge-default'>00:00:07:271</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Test the users Api for post request with valid authorization and valid details</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.UsersPost.user_is_on_post_method_of_users_api()">
+                <span>Given User is on post method of users API</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.UsersPost.user_sends_post_request_with_valid_values_with_endpoint_url()">
+                <span>When User sends post request with valid values with endpoint URL</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.UsersPost.the_status_code_is_with_success_message(java.lang.Integer)">
+                <span>Then The status code is 201 with success message</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="6"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">As a tester, I want to test User API so that I can validate GET method</p>
+            <p class="text-sm">
+              <span>9:57:16 AM</span> / <span>00:00:02:889</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">As a tester, I want to test User API so that I can validate GET method</h5>
+<span class='badge badge-success'>04.03.2022 9:57:16 AM</span>
+<span class='badge badge-danger'>04.03.2022 9:57:19 AM</span>
+<span class='badge badge-default'>00:00:02:889</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="7"><span class="badge log pass-bg mr-2">Pass</span>Test the Get request for all users of User API</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.UsersGet.user_is_on_the_get_method()">
+                <span>Given user is on the Get method</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.UsersGet.user_sends_get_request_with_valid_authorization_for_all_users()">
+                <span>When user sends get request with valid authorization for all users</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.UsersGet.user_details_are_displayed_with_ok_message(java.lang.Integer)">
+                <span>Then user details are displayed with 200 OK message</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="11"><span class="badge log pass-bg mr-2">Pass</span>Test the Api for get request for single user with valid id</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.UsersGet.user_is_on_the_get_method()">
+                <span>Given user is on the Get method</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.UsersGet.user_sends_get_request_for_valid_id_with_valid_authorization()">
+                <span>When user sends get request for valid id with valid authorization</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.UsersGet.single_user_details_are_displayed_with_ok_message(java.lang.Integer)">
+                <span>Then single user details are displayed with 200 OK message</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="15"><span class="badge log pass-bg mr-2">Pass</span>Test the Get request for User API without authorization</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.UsersGet.user_is_on_the_get_method()">
+                <span>Given user is on the Get method</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.UsersGet.user_sends_get_request_with_no_authorization()">
+                <span>When user sends get request with no authorization</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.UsersGet.unathorized_status_code_should_be_returned(java.lang.Integer)">
+                <span>Then 401 unathorized status code should be returned</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="19"><span class="badge log pass-bg mr-2">Pass</span>Test the Api for get request with invalid id</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.UsersGet.user_is_on_the_get_method()">
+                <span>Given user is on the Get method</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.UsersGet.user_sends_get_request_for_invalid_id()">
+                <span>When user sends get request for invalid id</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.UsersGet.single_user_details_are_displayed_with_not_found_message(java.lang.Integer)">
+                <span>Then single user details are displayed with 404 Not found message</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="23"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">As a tester I want to test User API so that I can validate PUT method</p>
+            <p class="text-sm">
+              <span>9:57:19 AM</span> / <span>00:00:01:836</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">As a tester I want to test User API so that I can validate PUT method</h5>
+<span class='badge badge-success'>04.03.2022 9:57:19 AM</span>
+<span class='badge badge-danger'>04.03.2022 9:57:21 AM</span>
+<span class='badge badge-default'>00:00:01:836</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=23</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="24"><span class="badge log pass-bg mr-2">Pass</span>Test the Users API for put request with valid id</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.UsersPut.user_is_in_the_endpoint_url_with_valid_id()">
+                <span>Given User is in the endpoint url with valid id</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.UsersPut.user_sends_put_request_with_endpoint_url_users_id_with_updated_fields_and_values()">
+                <span>When User sends PUT request with endpoint url/users/id with updated fields and values</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.UsersPut.the_response_should_show_status_code_created(java.lang.Integer)">
+                <span>Then The response should show status code 201 Created</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="28"><span class="badge log pass-bg mr-2">Pass</span>Test the Users API for put request with invalid id</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.UsersPut.user_is_in_the_endpoint_url_with_invalid_id()">
+                <span>Given User is in the endpoint url with invalid id</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.UsersPut.user_sends_put_request_with_endpoint_url_users_id_with_updated_fields_and_values()">
+                <span>When User sends PUT request with endpoint url/users/id with updated fields and values</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.UsersPut.the_response_should_show_status_code_not_found(java.lang.Integer)">
+                <span>Then The response should show status code 404 Not Found</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="32"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">As a user, I want to test the delete request of Users API</p>
+            <p class="text-sm">
+              <span>9:57:21 AM</span> / <span>00:00:38:634</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">As a user, I want to test the delete request of Users API</h5>
+<span class='badge badge-success'>04.03.2022 9:57:21 AM</span>
+<span class='badge badge-danger'>04.03.2022 9:58:00 AM</span>
+<span class='badge badge-default'>00:00:38:634</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=32</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="33"><span class="badge log pass-bg mr-2">Pass</span>Test the delete method for valid user id</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.UsersDelete.user_is_on_delete_method()">
+                <span>Given user is on delete method</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.UsersDelete.user_sends_delete_request_with_valid_user_id()">
+                <span>When user sends delete request with valid user id</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.UsersDelete.the_user_id_is_deleted_with_response_code(java.lang.Integer)">
+                <span>Then the user id is deleted with response code 200</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="37"><span class="badge log pass-bg mr-2">Pass</span>Test the delete method for nonexistant user id</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.UsersDelete.user_is_on_delete_method()">
+                <span>Given user is on delete method</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.UsersDelete.user_sends_delete_request_with_non_existing_user_id()">
+                <span>When user sends delete request with non existing user id</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.UsersDelete.not_found_response_code_is_displayed(java.lang.Integer)">
+                <span>Then 404 not found response code is displayed</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="41"><span class="badge log pass-bg mr-2">Pass</span>Test the delete method by not giving userid in the endpoint</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.UsersDelete.user_is_on_delete_method()">
+                <span>Given user is on delete method</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.UsersDelete.user_sends_delete_request_without_userid()">
+                <span>When user sends delete request without userid</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.UsersDelete.method_not_found_error_is_displayed(java.lang.Integer)">
+                <span>Then 405 method not found error is displayed</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="45"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">As a tester I want to test and validate Skills API POST method</p>
+            <p class="text-sm">
+              <span>9:58:00 AM</span> / <span>00:00:03:557</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">As a tester I want to test and validate Skills API POST method</h5>
+<span class='badge badge-success'>04.03.2022 9:58:00 AM</span>
+<span class='badge badge-danger'>04.03.2022 9:58:03 AM</span>
+<span class='badge badge-default'>00:00:03:557</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=45</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="46"><span class="badge log pass-bg mr-2">Pass</span>To test the post method in Skills API with valid skill name</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.SkillsPost.user_is_in_post_method()">
+                <span>Given User is in POST method</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.SkillsPost.user_sends_post_request_with_input_skill_name()">
+                <span>When User sends POST request with Input Skill_name</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.SkillsPost.the_response_status_with_the_message_successfully_created(java.lang.Integer)">
+                <span>Then The response status 201 with the message successfully created</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="50"><span class="badge log pass-bg mr-2">Pass</span>To test the post method in skills api without authorization</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.SkillsPost.user_is_in_post_method()">
+                <span>Given User is in POST method</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.SkillsPost.user_sends_post_request_without_authorization()">
+                <span>When User sends POST request without authorization</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.SkillsPost.the_response_status_unauthorized_is_returned(java.lang.Integer)">
+                <span>Then The response status 401 unauthorized is returned</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="54"><span class="badge log pass-bg mr-2">Pass</span>To test the post method in skills api with same skill name</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.SkillsPost.user_is_in_post_method()">
+                <span>Given User is in POST method</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.SkillsPost.user_sends_post_request_with_existing_skill_name()">
+                <span>When User sends POST request with existing skill name</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.SkillsPost.the_response_status_bad_request_is_returned(java.lang.Integer)">
+                <span>Then The response status 400 Bad request is returned</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="58"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">As a tester , I want to validate and test the Get request of Skills API</p>
+            <p class="text-sm">
+              <span>9:58:03 AM</span> / <span>00:00:01:632</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">As a tester , I want to validate and test the Get request of Skills API</h5>
+<span class='badge badge-success'>04.03.2022 9:58:03 AM</span>
+<span class='badge badge-danger'>04.03.2022 9:58:05 AM</span>
+<span class='badge badge-default'>00:00:01:632</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=58</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="59"><span class="badge log pass-bg mr-2">Pass</span>Test the Get request for all Skills of Skills API with valid auth</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.SkillsGet.user_is_on_the_get_method_of_skills_api()">
+                <span>Given user is on the Get method of SkillsApi</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.SkillsGet.user_sends_get_request_for_all_skills_with_end()">
+                <span>When user sends get request for all skills with end</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.SkillsGet.skills_details_are_displayed_with_ok_message(java.lang.Integer)">
+                <span>Then Skills details are displayed with 200 OK message</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="63"><span class="badge log pass-bg mr-2">Pass</span>Test the Api for get request for single skill with valid id and valid auth</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.SkillsGet.user_is_on_the_get_method_of_skills_api()">
+                <span>Given user is on the Get method of SkillsApi</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.SkillsGet.user_sends_get_skills_request_for_valid_id()">
+                <span>When user sends get skills request for valid id</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.SkillsGet.particular_skill_details_are_displayed_with_ok_message(java.lang.Integer)">
+                <span>Then particular skill details are displayed with 200 OK message</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="67"><span class="badge log pass-bg mr-2">Pass</span>Test the Api for get request with invalid skill id</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.SkillsGet.user_is_on_the_get_method_of_skills_api()">
+                <span>Given user is on the Get method of SkillsApi</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.SkillsGet.user_sends_get_request_for_invalid_skill_id()">
+                <span>When user sends get request for invalid skill id</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.SkillsGet.single_skill_details_are_displayed_with_not_found_message(java.lang.Integer)">
+                <span>Then single skill details are displayed with 404 Not found message</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="71"><span class="badge log pass-bg mr-2">Pass</span>Test the Get request for Skills API without authorization</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.SkillsGet.user_is_on_the_get_method_of_skills_api()">
+                <span>Given user is on the Get method of SkillsApi</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.SkillsGet.user_sends_get_request_with_no_authorization_for_skills()">
+                <span>When user sends get request with no authorization for skills</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.SkillsGet.unathorized_status_error_code_should_be_returned(java.lang.Integer)">
+                <span>Then 401 unathorized status error code should be returned</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="75"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">As a tester I want to test and validate Skills API PUT method</p>
+            <p class="text-sm">
+              <span>9:58:05 AM</span> / <span>00:00:01:118</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">As a tester I want to test and validate Skills API PUT method</h5>
+<span class='badge badge-success'>04.03.2022 9:58:05 AM</span>
+<span class='badge badge-danger'>04.03.2022 9:58:06 AM</span>
+<span class='badge badge-default'>00:00:01:118</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=75</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="76"><span class="badge log pass-bg mr-2">Pass</span>Test the Skills API for put request with valid id</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.SkillsPut.user_is_in_put_method_of_skills_api()">
+                <span>Given User is in put method of skills api</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.SkillsPut.user_sends_put_request_with_with_skill_id_and_name()">
+                <span>When User sends PUT request with with skill id and name</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.SkillsPut.the_response_should_return_status_code_created(java.lang.Integer)">
+                <span>Then The response should return status code 201 Created</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="80"><span class="badge log pass-bg mr-2">Pass</span>Test the Skills API for put request with invalid id</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.SkillsPut.user_is_in_put_method_of_skills_api()">
+                <span>Given User is in put method of skills api</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.SkillsPut.user_sends_put_request_with_invalid_id()">
+                <span>When User sends PUT request with invalid id</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.SkillsPut.the_response_should_return_status_code_not_found(java.lang.Integer)">
+                <span>Then The response should return status code 404 Not Found</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="84"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">As a user, I want to test and validate the delete request of Skills API</p>
+            <p class="text-sm">
+              <span>9:58:06 AM</span> / <span>00:00:02:847</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">As a user, I want to test and validate the delete request of Skills API</h5>
+<span class='badge badge-success'>04.03.2022 9:58:06 AM</span>
+<span class='badge badge-danger'>04.03.2022 9:58:09 AM</span>
+<span class='badge badge-default'>00:00:02:847</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=84</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="85"><span class="badge log pass-bg mr-2">Pass</span>Test the delete method for valid skill id</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.SkillsDelete.user_is_on_delete_method_in_skills_api()">
+                <span>Given user is on delete method in skills Api</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.SkillsDelete.user_sends_delete_request_with_valid_skill_id()">
+                <span>When user sends delete request with valid skill id</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.SkillsDelete.the_skill_id_is_deleted_with_response_code(java.lang.Integer)">
+                <span>Then the skill id is deleted with response code 200</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="89"><span class="badge log pass-bg mr-2">Pass</span>Test the delete method for nonexistant skill id</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.SkillsDelete.user_is_on_delete_method_in_skills_api()">
+                <span>Given user is on delete method in skills Api</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.SkillsDelete.user_sends_delete_request_with_non_existing_skill_id()">
+                <span>When user sends delete request with non existing skill id</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.SkillsDelete.not_found_error_response_code_is_displayed(java.lang.Integer)">
+                <span>Then 404 not found error response code is displayed</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="93"><span class="badge log pass-bg mr-2">Pass</span>Test the delete method by not giving skill id in the endpoint</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.SkillsDelete.user_is_on_delete_method_in_skills_api()">
+                <span>Given user is on delete method in skills Api</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.SkillsDelete.user_sends_delete_request_without_skill_id()">
+                <span>When user sends delete request without skill id</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.SkillsDelete.method_not_found_error_is_displayed_in_skills(java.lang.Integer)">
+                <span>Then 405 method not found error is displayed in skills</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="97"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">As a tester I want to test and validate the GET method in UserSkillsMap API</p>
+            <p class="text-sm">
+              <span>9:58:09 AM</span> / <span>00:00:02:374</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">As a tester I want to test and validate the GET method in UserSkillsMap API</h5>
+<span class='badge badge-success'>04.03.2022 9:58:09 AM</span>
+<span class='badge badge-danger'>04.03.2022 9:58:11 AM</span>
+<span class='badge badge-default'>00:00:02:374</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=97</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="98"><span class="badge log pass-bg mr-2">Pass</span>To get all the Users and their associated Skills  from UserSkillsMap API</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.UserSkillsMapGet.user_selects_get_method_in_user_skills_map_api()">
+                <span>Given User selects GET method in UserSkillsMap api</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.UserSkillsMapGet.user_sends_get_request_with_endpoint_user_skills_map()">
+                <span>When User sends GET request with endpoint UserSkillsMap</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.UserSkillsMapGet.the_response_should_be_in_json_format_with_the_status_code(java.lang.Integer)">
+                <span>Then The response should be in JSON format with the status code 200</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="102"><span class="badge log pass-bg mr-2">Pass</span>To get a particular  User and their associated Skills  from UserSkillsMap API</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.UserSkillsMapGet.user_selects_get_method_and_enter_the_endpoint()">
+                <span>Given User selects GET method and enter the endpoint</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.UserSkillsMapGet.user_sends_get_request_with_userid_endpoint()">
+                <span>When User sends GET request with userid endpoint</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.UserSkillsMapGet.user_id_details_wil_be_returned_with_the_status_code(java.lang.Integer)">
+                <span>Then user id details wil be returned with the status code 200</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="106"><span class="badge log pass-bg mr-2">Pass</span>To get all users of a  particular  Skill in UserSkillsMap API</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.UserSkillsMapGet.user_selects_get_method_and_enter_the_endpoint_skills()">
+                <span>Given User selects GET method and enter the endpoint skills</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.UserSkillsMapGet.user_sends_get_request_with_skillid_endpoint()">
+                <span>When User sends GET request with skillid endpoint</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.UserSkillsMapGet.skill_id_details_will_be_displayed_with_the_status_code(java.lang.Integer)">
+                <span>Then skill id details will be displayed with the status code 200</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="110"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">As a tester,I want to test and validate Post request in UserSkills API</p>
+            <p class="text-sm">
+              <span>9:58:11 AM</span> / <span>00:00:02:876</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">As a tester,I want to test and validate Post request in UserSkills API</h5>
+<span class='badge badge-success'>04.03.2022 9:58:11 AM</span>
+<span class='badge badge-danger'>04.03.2022 9:58:14 AM</span>
+<span class='badge badge-default'>00:00:02:876</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=110</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="111"><span class="badge log pass-bg mr-2">Pass</span>Test the userSkills Api for post request with valid authorization and valid details</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.UserSkillsPost.user_is_on_post_method_of_userskills_api()">
+                <span>Given User is on post method of userskills API</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.UserSkillsPost.user_sends_post_request_with_valid_values_with_endpoint_url_in_userskills()">
+                <span>When User sends post request with valid values with endpoint URL in userskills</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.UserSkillsPost.the_status_code_is_with_success_message_ok(java.lang.Integer)">
+                <span>Then The status code is 201 with success message OK</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="115"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">As a tester I want to test UserSkills API so that I can validate GET method</p>
+            <p class="text-sm">
+              <span>9:58:14 AM</span> / <span>00:00:01:739</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">As a tester I want to test UserSkills API so that I can validate GET method</h5>
+<span class='badge badge-success'>04.03.2022 9:58:14 AM</span>
+<span class='badge badge-danger'>04.03.2022 9:58:16 AM</span>
+<span class='badge badge-default'>00:00:01:739</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=115</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="116"><span class="badge log pass-bg mr-2">Pass</span>Test the Get request for all users of UserSkills API</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.UserSkillsGet.user_is_on_the_get_method_in_user_skills_api()">
+                <span>Given user is on the Get method in UserSkills Api</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.UserSkillsGet.user_sends_get_request_with_valid_auth_for_all_users_in_user_skill_api()">
+                <span>When user sends get request with valid auth for all users in UserSkill Api</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.UserSkillsGet.userskill_details_are_displayed_with_ok_message(java.lang.Integer)">
+                <span>Then userskill details are displayed with 200 OK message</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="120"><span class="badge log pass-bg mr-2">Pass</span>Test the Api for get request for single user in UserSkills API</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.UserSkillsGet.user_is_on_the_get_method_in_user_skills_api()">
+                <span>Given user is on the Get method in UserSkills Api</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.UserSkillsGet.user_sends_get_request_with_valid_user_skill_id()">
+                <span>When user sends get request with valid user skill id</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.UserSkillsGet.single_user_skill_details_are_displayed_with_ok_message(java.lang.Integer)">
+                <span>Then single user skill details are displayed with 200 OK message</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="124"><span class="badge log pass-bg mr-2">Pass</span>Test the Get request for User API without authorization in UserSkills API</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.UserSkillsGet.user_is_on_the_get_method_in_user_skills_api()">
+                <span>Given user is on the Get method in UserSkills Api</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.UserSkillsGet.user_sends_get_request_with_no_authorization_in_user_skills_api()">
+                <span>When user sends get request with no authorization in UserSkills Api</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.UserSkillsGet.unathorized_status_code_should_be_returned_in_userskills(java.lang.Integer)">
+                <span>Then 401 unathorized status code should be returned in userskills</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="128"><span class="badge log pass-bg mr-2">Pass</span>Test the Api for get request with invalid id for userskills</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.UserSkillsGet.user_is_on_the_get_method_in_user_skills_api()">
+                <span>Given user is on the Get method in UserSkills Api</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.UserSkillsGet.user_sends_get_request_for_invalid_id_in_userskills()">
+                <span>When user sends get request for invalid id in userskills</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.UserSkillsGet.not_found_message_is_returned(java.lang.Integer)">
+                <span>Then 404 Not found message is returned</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="132"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">As a tester I want to test UserSkills API so that I can validate Put method</p>
+            <p class="text-sm">
+              <span>9:58:16 AM</span> / <span>00:00:01:047</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">As a tester I want to test UserSkills API so that I can validate Put method</h5>
+<span class='badge badge-success'>04.03.2022 9:58:16 AM</span>
+<span class='badge badge-danger'>04.03.2022 9:58:17 AM</span>
+<span class='badge badge-default'>00:00:01:047</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=132</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="133"><span class="badge log pass-bg mr-2">Pass</span>To test the put method of Userskills API</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.UserSkillsPut.user_selects_put_method_in_user_skills_api()">
+                <span>Given User selects put method in UserSkills api</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.UserSkillsPut.user_sends_put_request_with_valid_user_skill_id()">
+                <span>When User sends put request with valid user skill id</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.UserSkillsPut.the_status_code_is_returned_in_user_skills_api(java.lang.Integer)">
+                <span>Then The 201 status code is returned in UserSkills api</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="137"><span class="badge log pass-bg mr-2">Pass</span>To test the put method of Userskills API  for invalid id</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.UserSkillsPut.user_selects_put_method_in_user_skills_api()">
+                <span>Given User selects put method in UserSkills api</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.UserSkillsPut.user_sends_put_request_with_invalid_user_skill_id()">
+                <span>When User sends put request with invalid user skill id</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.UserSkillsPut.the_response_should_show_status_code_not_found_in_user_skills_api(java.lang.Integer)">
+                <span>Then The response should show status code 404 Not Found in UserSkills api</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="141"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">As a tester I want to test UserSkills API so that I can validate DELETE method</p>
+            <p class="text-sm">
+              <span>9:58:17 AM</span> / <span>00:00:01:099</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">As a tester I want to test UserSkills API so that I can validate DELETE method</h5>
+<span class='badge badge-success'>04.03.2022 9:58:17 AM</span>
+<span class='badge badge-danger'>04.03.2022 9:58:18 AM</span>
+<span class='badge badge-default'>00:00:01:099</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=141</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="142"><span class="badge log pass-bg mr-2">Pass</span>Test the deletion of the Existing User_Skill_Id</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.UserSkillsDelete.user_selects_delete_method_in_user_skills_api()">
+                <span>Given User selects DELETE method in UserSkills api</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.UserSkillsDelete.user_sends_delete_request_with_valid_user_skill_id()">
+                <span>When User sends delete request with valid user skill id</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.UserSkillsDelete.the_response_with_the_status_code_is_returned(java.lang.Integer)">
+                <span>Then The response with the status code 200 is returned</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="146"><span class="badge log pass-bg mr-2">Pass</span>Test the deletion of the Non-Existing User_Skill_Id</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.UserSkillsDelete.user_selects_delete_method_in_user_skills_api()">
+                <span>Given User selects DELETE method in UserSkills api</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.UserSkillsDelete.user_sends_delete_request_with_in_valid_user_skill_id()">
+                <span>When User sends delete request with in valid user skill id</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.UserSkillsDelete.not_found_error_will_be_returned_in_userskills_api(java.lang.Integer)">
+                <span>Then 404 not found error will be returned in userskills api</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Apr 3, 2022 09:57:08 AM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Apr 3, 2022 09:58:19 AM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>13</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>0</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'>
+<b>13</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='0%'><b>0</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'><b>34</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='0%'><b>0</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'><b>102</b> steps passed</small></div>
+<div>
+<small data-tooltip='0%'><b>0</b> steps failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"As a tester,I want to test and validate Post request in Users API":7.271,"As a tester, I want to test User API so that I can validate GET method":2.889,"As a tester I want to test User API so that I can validate PUT method":1.836,"As a user, I want to test the delete request of Users API":38.634,"As a tester I want to test and validate Skills API POST method":3.557,"As a tester , I want to validate and test the Get request of Skills API":1.632,"As a tester I want to test and validate Skills API PUT method":1.118,"As a user, I want to test and validate the delete request of Skills API":2.847,"As a tester I want to test and validate the GET method in UserSkillsMap API":2.374,"As a tester,I want to test and validate Post request in UserSkills API":2.876,"As a tester I want to test UserSkills API so that I can validate GET method":1.739,"As a tester I want to test UserSkills API so that I can validate Put method":1.047,"As a tester I want to test UserSkills API so that I can validate DELETE method":1.099
+};
+</script>
+<div class="row">
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 13,
+failParent: 0,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 34,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 102,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
