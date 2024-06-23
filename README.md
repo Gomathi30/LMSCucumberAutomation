@@ -1,2 +1,2 @@
 # LMSCucumberAutomation
- LMS API rest assured automation using cucumber 
+ LMS API rest assured automation using cucumber framework
